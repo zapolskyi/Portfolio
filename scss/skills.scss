@@ -1,0 +1,144 @@
+.skills{
+    margin-top: 15.3rem;
+    margin-bottom: 10.3rem;
+
+    &__top{
+        text-align: center;
+        margin-bottom: 3.3rem;
+    }
+
+    &__title{
+        color: $black;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 700;
+
+
+        margin-bottom: .5rem;
+    }
+
+    &__text{
+        font-weight: 300;
+        font-size: 1.2rem;
+        color: $grey;
+    }
+
+    &__row{
+        display: flex;
+        flex-wrap: wrap;
+        color: rgb(105, 104, 104);
+
+        margin: 0 -1rem;
+    }
+
+    &__column{
+        width: 33.333333%;
+        padding: 0 1rem;
+    }
+
+    &__header{
+        position: relative;
+    }
+
+    &__time{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+        width: 77px;
+        height: 77px;
+        background-color: $black;
+        color: $white;
+        font-weight: 700;
+        font-size: 1.066rem;
+
+        position: absolute;
+        bottom: 10px;
+        left: -10px;
+        z-index: 2;
+    }
+
+    &__img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+        margin-bottom: 1.3rem;
+    }
+
+    &__content{
+        margin-bottom: 2rem;
+
+        &-title{
+            font-weight: 700;
+            color: $black;
+            font-size: 1.2rem;
+
+            margin-bottom: .6rem;
+        }
+
+        &-category{
+            font-weight: 400;
+            font-size: .8rem;
+            color: $black;
+
+            margin-bottom: 1.3rem;
+        }
+
+        &-text{
+            font-weight: 300;
+            color: $grey;
+            font-size: .8rem;
+            line-height: 2;
+
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__nav{
+
+        &-link{
+            display: inline-block;
+            text-decoration: none;
+            color: $grey;
+            font-weight: 400;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .skills__column{
+        width: 50%;
+    }
+
+    .skills__row{
+        justify-content: center;
+    }
+
+    .skills{
+        margin-top: 14rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .skills__column{
+        width: 100%;
+    }
+
+    .skills__content{
+        text-align: center;
+    }
+
+    .skills__item{
+        margin: 0 auto;
+        max-width: 370px;
+    }
+
+    .skills__row{
+        justify-content: center;
+    }
+
+}

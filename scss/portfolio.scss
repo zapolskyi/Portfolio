@@ -1,0 +1,139 @@
+.works{
+    margin: 2.8rem 0;
+
+    &__nav{
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 1.5rem;
+
+        &-link{
+            display: inline-block;
+            font-size: .8rem;
+            color: $grey;
+            text-decoration: none;
+
+            margin-right: 2.33rem;
+
+            position: relative;
+
+            &:last-child{
+                margin: 0;
+            }
+
+            &::before{
+                content: '';
+                display: block;
+                width: 0%;
+                height: 2px;
+                background-color: $grey;
+
+                position: absolute;
+                left: 0;
+                bottom: -4px;
+                z-index: 2;
+
+                opacity: 0;
+
+                transition: all .1s linear;
+            }
+
+            &:hover::before{
+                width: 100%;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__btn{
+        display: grid;
+        place-items: center;
+    }
+}
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0 -1rem 2.8rem;
+
+    &__column{
+        width: 33.33333%;
+        padding: 1rem;
+    }
+
+    &__item{
+         box-shadow: 0 0 4px rgba($black, 25%);
+         border-radius: 10px;
+         overflow: hidden;
+         cursor: pointer;
+
+         transition: all .2s linear;
+
+         &:hover{
+            transform: scale(1.1 , 1.2);
+            box-shadow: 0 0 25px rgba($black, 25%);
+         }
+    }
+
+    &__img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        
+    }
+
+    &__content{
+        padding: 1rem 0.8rem;
+        background-color: $white;
+
+    }
+
+    &__category{
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-family: 400;
+        color: $grey;
+        margin-bottom: .8rem;
+    }
+
+    &__title{
+        text-transform: uppercase;
+        color: $black;
+        font-weight: 700;
+        font-size: 1.066rem;
+    }
+
+    &__date{
+        font-size: 1.066rem;
+        font-weight: 700;
+    }
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.hide{
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .portfolio__column{
+        width: 50%;
+    }
+}
+
+@media (max-width: 620px) {
+    .portfolio__column{
+        width: 100%;
+        max-width: 370px;
+        margin: 0 auto;
+       
+    }
+
+    .portfolio__img{
+        width: 100%;
+    }
+}

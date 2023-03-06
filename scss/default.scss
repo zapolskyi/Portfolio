@@ -1,0 +1,90 @@
+.btn{
+    display: inline-block;
+    text-transform: uppercase;
+    color: $grey;
+    background-color: $white;
+    padding: 1.05rem 1.07rem;
+    text-decoration: none;
+    border: 2px solid $grey;
+    border-radius: 40px;
+    min-width: 170px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+
+    margin-right: 7px;
+
+    transition: all .2s linear;
+
+    &:hover{
+        box-shadow: inset 190px 0 0 $black;
+        color: #ffff;
+    }
+
+    &:last-child{
+        margin: 0px;
+    }
+}
+
+
+.small-btn{
+    display: inline-block;
+    color: $black;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.93rem;
+    text-decoration: none;
+
+    padding: 10px 20px;
+    border: 2px solid $black;
+    border-radius: 20px;
+    transition: all .2s linear;
+
+
+    &:hover{
+        box-shadow: inset 190px 0 0 $black;
+        color: #ffff;
+    }
+}
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+.left{
+    text-align: lef;
+}
+
+@media (max-width: 991px) {
+    .btn{
+        min-width: 140px;
+        padding: 1.05rem 1.4rem;
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .btn{
+        min-width: 120px;
+        padding: 1rem 1.1rem;
+        font-size: .9rem;
+    }
+}
+
+
+@media (max-width: 620px) {
+    .btn{
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .btn:last-child{
+        margin-top: 1rem;
+    }
+}

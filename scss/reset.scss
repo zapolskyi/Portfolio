@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+html{
+    font-size: 15px;
+}
+
+body{
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    color: $black;
+}
+
+button{
+    padding: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}

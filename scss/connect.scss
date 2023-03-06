@@ -1,0 +1,39 @@
+.connect{
+    display: flex;
+
+    background: url(https://placehold.it/480x700) right center no-repeat;
+
+    &__left{
+        width: 47%;
+
+        padding: 2rem;
+    }
+
+    &__info{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+
+        font-size: .94rem;
+        color: $black;
+        font-weight: 300;
+
+        &-item{
+            display: flex;
+            align-items: center;
+
+            margin-bottom: .6rem;
+
+            &:last-child{
+                margin: 0;
+            }
+        }
+
+        &-img{
+            margin-right: 1rem;
+        }
+    }
+}
+
+.mb{
+    margin-bottom: 0;
+}
