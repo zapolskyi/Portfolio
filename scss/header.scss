@@ -1,5 +1,14 @@
 .header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #ffff;
+
+    &.shadow{
+        box-shadow: 0 9px 12px rgb(0, 0, 0, .2);
+    }
 
     &__row {
         display: flex;
@@ -68,14 +77,6 @@
 
             &:last-child {
                 margin: 0;
-                display: inline-block;
-                padding: 10px 30px;
-                border-radius: 25px;
-                border: 2px solid $black;
-
-                box-shadow: inset 0px 0 0 $black;
-
-                transition: all .2s linear;
 
             }
 
@@ -101,10 +102,7 @@
                 width: 100%
             }
 
-            &:last-child:hover {
-                box-shadow: inset 127px 0 0 $black;
-                color: #ffff;
-            }
+           
         }
 
     }
@@ -167,8 +165,4 @@
     .header__nav-link::before{
         display: none;
     }
-
-
-
-
 }

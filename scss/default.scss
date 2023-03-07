@@ -17,7 +17,7 @@
     transition: all .2s linear;
 
     &:hover{
-        box-shadow: inset 190px 0 0 $black;
+        box-shadow: inset 190px 0 0 #34453c;
         color: #ffff;
     }
 
@@ -38,11 +38,11 @@
     padding: 10px 20px;
     border: 2px solid $black;
     border-radius: 20px;
-    transition: all .2s linear;
+    transition: all .3s linear;
 
 
     &:hover{
-        box-shadow: inset 190px 0 0 $black;
+        box-shadow: inset 190px 0 0 #34453c;
         color: #ffff;
     }
 }
@@ -56,7 +56,7 @@
 }
 
 .left{
-    text-align: lef;
+    text-align: left;
 }
 
 @media (max-width: 991px) {
