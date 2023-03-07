@@ -175,7 +175,33 @@ body{
         font-size: 1.06rem;
         color: $black;
         font-weight: 400;
+        margin-top: .4rem;
 
     }
 
+}
+
+
+@media (max-width: 768px) {
+    .modal__title{
+        font-size: 2rem;
+    }
+
+    .modal__title{
+        margin-bottom: 2rem;
+    }
+
+    .modal__suptitle{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .modal__title{
+        font-size: 1.6rem;
+    }
+
+    .modal__suptitle{
+        font-size: .7rem;
+    }
 }

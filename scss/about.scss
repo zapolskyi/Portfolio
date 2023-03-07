@@ -1,31 +1,16 @@
 .about{
-    margin: 8.4rem 0;
+    margin: 4.4rem 0;
 
     &__row{
         display: flex;
         flex-wrap: wrap;
 
         max-width: 1090px;
-
     }
 
     &__photo{
         width: 50%;
         position: relative;
-
-        &::before{
-            content: '';
-            display: block;
-            width: 410px;
-            height: 410px;
-
-            background-color: $light-grey;
-
-            position: absolute;
-            left: 1rem;
-            bottom: 0;
-            z-index: 1;
-        }
 
     }
 
@@ -130,6 +115,10 @@
 
     .about__content{
         text-align: center;
+    }
+
+    .about__img{
+        margin: 0 auto;
     }
 
 }

@@ -80,3 +80,31 @@
         line-height: 1.5;
     }
 }
+
+@media (max-width: 768px) {
+    .timeline{
+        margin: 3.2rem auto;
+    }
+}
+
+@media (max-width: 620px) {
+    .timeline{
+        margin: 3.2rem auto;
+    }
+
+    .timeline__column-left{
+        padding-right: 1.2rem;
+    }
+
+    .timeline__column-right{
+        padding-left: 1.2rem;
+    }
+
+    .timeline__title{
+        margin-bottom: 1.6rem;
+    }
+
+    .timeline__text{
+        font-size: .7rem;
+    }
+}

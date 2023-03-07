@@ -9,6 +9,12 @@
         padding: 1rem 0;
     }
 
+    &__img{
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+    }
+
     &__me {
         display: flex;
         align-items: center;
